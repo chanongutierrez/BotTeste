@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Bot n8n</title>
+  <!-- Incluye el estilo del chat -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Aquí se cargará el chat -->
+  <div id="chat"></div>
+  
+  <!-- Importación y configuración del chat -->
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+    // Configura el chat con la tool obtenerProcesso (o la configuración de tu webhook)
+    createChat({
+      webhookUrl: "https://engaging-seahorse-19.rshare.io//webhook/75971878-8419-4757-859e-573f59ab72fc/chat"
+    });
+  </script>
+</body>
+</html>
