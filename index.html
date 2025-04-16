@@ -15,9 +15,10 @@
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
     
-    // Configura el chat con la tool obtenerProcesso (o la configuración de tu webhook)
     createChat({
-      webhookUrl: "https://engaging-seahorse-19.rshare.io/webhook/6ffab146-6d58-4937-913d-d0028744e11b/chat"
+      webhookUrl: "https://engaging-seahorse-19.rshare.io/webhook/6ffab146-6d58-4937-913d-d0028744e11b/chat",
+      // Parámetro adicional para definir la mensagem inicial
+      initialMessage: "Oi Fabricio como posso te ajudar hoje?"
     });
   </script>
 </body>
